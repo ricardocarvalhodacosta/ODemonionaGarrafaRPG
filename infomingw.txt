@@ -1,0 +1,40 @@
+infomingw.txt
+
+Para criar um executável .exe a partir do código fonte do seu projeto em C no Windows, você pode utilizar o compilador MinGW, que inclui o GCC (o mesmo compilador que utilizamos no Ubuntu) e o conjunto de ferramentas MSYS, que permitem compilar e executar programas no estilo Unix no Windows.
+
+Aqui estão os passos para criar um executável .exe usando o MinGW:
+
+    Faça o download e instale o MinGW. Você pode baixá-lo em https://sourceforge.net/projects/mingw-w64/.
+
+    Adicione o caminho do diretório bin do MinGW ao seu PATH. Para fazer isso, abra o Painel de Controle do Windows e selecione "Sistema e Segurança" > "Sistema" > "Configurações avançadas do sistema" > "Variáveis de ambiente". Na seção "Variáveis do sistema", encontre a variável "Path" e clique em "Editar". Adicione o caminho do diretório bin do MinGW (por exemplo, "C:\MinGW\bin") ao final da linha e salve as alterações.
+
+    Abra o prompt de comando do Windows e navegue até o diretório do seu projeto.
+
+    Compile seu código-fonte com o seguinte comando:
+
+gcc -o nome_do_executavel.exe nome_do_arquivo.c -lSDL2main -lSDL2 -lSDL2_mixer -lncurses
+
+Substitua "nome_do_executavel" pelo nome que deseja dar ao seu arquivo executável e "nome_do_arquivo.c" pelo nome do seu arquivo de código-fonte.
+
+    Se tudo correr bem, o MinGW deve criar um arquivo executável .exe no diretório atual.
+
+    Para executar o arquivo .exe, basta dar um duplo clique nele ou executá-lo a partir do prompt de comando com o seguinte comando:
+
+nome_do_executavel.exe
+
+Substitua "nome_do_executavel" pelo nome que você deu ao seu arquivo executável.
+
+========================================================================================================================================
+
+Para instalar o MinGW, você pode seguir os seguintes passos:
+
+    Baixe o instalador do MinGW do site oficial: https://osdn.net/projects/mingw/releases/
+    Execute o instalador e selecione os pacotes que deseja instalar. Certifique-se de selecionar o pacote "mingw32-base" e "mingw32-gcc-g++".
+    Selecione um diretório para instalar o MinGW. Certifique-se de que o diretório não contenha espaços ou caracteres especiais.
+    Adicione o diretório do MinGW ao PATH do sistema. Para isso, vá até as propriedades do sistema, clique na aba "Avançado", depois em "Variáveis de ambiente", encontre a variável PATH, clique em "Editar", adicione o caminho completo para o diretório "bin" do MinGW no final da lista de caminhos, separando-o dos caminhos anteriores com um ponto-e-vírgula (;).
+
+Depois de instalar o MinGW, você pode compilar o seu programa no Windows usando o seguinte comando no Prompt de Comando:
+
+gcc -o meu_programa.exe arquivo1.c arquivo2.c arquivo3.c -lSDL2_mixer -lSDL2main -lSDL2
+
+Isso criará um arquivo executável chamado "meu_programa.exe" a partir dos arquivos de código-fonte "arquivo1.c", "arquivo2.c" e "arquivo3.c", usando a biblioteca SDL Mixer e as outras bibliotecas da SDL. Certifique-se de que todos os arquivos de código-fonte e as bibliotecas necessárias estejam no mesmo diretório.

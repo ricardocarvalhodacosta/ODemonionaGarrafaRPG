@@ -1,0 +1,60 @@
+infojson-c.txt
+#include <json-c/json.h>
+
+json_object * json_object_new_object(void): cria e retorna um novo objeto JSON vazio.
+
+json_object * json_object_new_array(void): cria e retorna um novo array JSON vazio.
+
+json_object * json_object_new_int(int value): cria e retorna um novo objeto JSON com um valor inteiro.
+
+json_object * json_object_new_double(double value): cria e retorna um novo objeto JSON com um valor de ponto flutuante.
+
+json_object * json_object_new_string(const char *string): cria e retorna um novo objeto JSON com uma string.
+
+void json_object_object_add(json_object *obj, const char *key, json_object *val): adiciona um novo par chave-valor a um objeto JSON.
+
+void json_object_array_add(json_object *array, json_object *val): adiciona um novo elemento a um array JSON.
+
+json_object * json_object_object_get(json_object *obj, const char *key): retorna o valor de um objeto JSON associado a uma determinada chave.
+
+int json_object_get_int(json_object *obj): retorna o valor inteiro de um objeto JSON.
+
+double json_object_get_double(json_object *obj): retorna o valor de ponto flutuante de um objeto JSON.
+
+const char *json_object_get_string(json_object *obj): retorna a string associada a um objeto JSON.
+
+size_t json_object_array_length(json_object *array): retorna o tamanho de um array JSON.
+
+json_object * json_object_array_get_idx(json_object *array, size_t idx): retorna o elemento em um índice específico de um array JSON.
+
+json_bool json_object_is_type(json_object *obj, enum json_type type): retorna verdadeiro se o objeto JSON é do tipo especificado.
+
+const char * json_object_to_json_string(json_object *obj): retorna uma representação em string JSON de um objeto.
+
+json_object * json_tokener_parse(const char *str): converte uma string JSON em um objeto JSON.
+
+json_object * json_object_from_file(const char *filename): carrega um objeto JSON de um arquivo.
+
+json_bool json_object_to_file(const char *filename, json_object *obj): salva um objeto JSON em um arquivo.
+
+json_object * json_object_array_sort(json_object *array, int (*sortfn)(const void *, const void *)): ordena um array JSON usando uma função de comparação personalizada.
+
+json_object * json_object_deep_copy(json_object *obj): cria uma cópia profunda de um objeto JSON.
+
+void json_object_put(json_object *obj): libera a memória alocada por um objeto JSON.
+
+void json_object_array_sort_recursive(json_object *array, int (*sortfn)(const void *, const void *)): ordena recursivamente um array JSON e seus elementos.
+
+json_object * json_object_new_boolean(json_bool b): cria um novo objeto JSON booleano.
+
+void json_object_object_foreach(json_object *obj, const char *key, json_object_object_foreach_t *cb, void *userdata): itera sobre cada elemento em um objeto JSON.
+
+json_object_get_boolean(json_object *jso) - Retorna o valor booleano de um objeto JSON.
+
+json_object_get_int(json_object *jso) - Retorna o valor inteiro de um objeto JSON.
+
+json_object_get_double(json_object *jso) - Retorna o valor em ponto flutuante de um objeto JSON.
+
+json_object_get_string(json_object *jso) - Retorna o valor de uma string de um objeto JSON.
+
+json_object_get_object(json_object *jso) - Retorna um objeto JSON a partir de outro objeto JSON.

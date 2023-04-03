@@ -1,0 +1,52 @@
+infoncurses.txt
+
+    initscr() - Inicia a tela para o modo curses.
+    endwin() - Termina o modo curses.
+    cbreak() - Desativa o buffer de linha.
+    noecho() - Desativa a exibição de caracteres digitados pelo usuário.
+    keypad() - Habilita a leitura de teclas especiais (como as setas) pelo getch().
+    start_color() - Inicia a biblioteca de cores do ncurses.
+    init_pair() - Define uma cor para um par de foreground e background.
+    attron() - Liga um atributo da tela (como a cor) para o próximo caractere impresso.
+    attroff() - Desliga um atributo da tela para o próximo caractere impresso.
+    clear() - Limpa a tela.
+    refresh() - Atualiza a tela.
+    move() - Move o cursor para uma posição específica na tela.
+    addch() - Adiciona um caractere na posição atual do cursor.
+    printw() - Imprime uma string na posição atual do cursor.
+    getch() - Lê um caractere do teclado.
+    getstr() - Lê uma string do teclado.
+    getyx() - Obtém a posição atual do cursor.
+    waddch() - Adiciona um caractere em uma janela específica.
+    wprintw() - Imprime uma string em uma janela específica.
+    wrefresh() - Atualiza uma janela específica.
+    box() - Desenha uma caixa em torno de uma janela.
+    mvaddch() - Move o cursor para uma posição específica na tela e adiciona um caractere.
+    mvprintw() - Move o cursor para uma posição específica na tela e imprime uma string.
+    mvwaddch() - Move o cursor para uma posição específica em uma janela e adiciona um caractere.
+    mvwprintw() - Move o cursor para uma posição específica em uma janela e imprime uma string.
+    mvwin() - Move uma janela para uma nova posição.
+    delwin() - Deleta uma janela.
+    newwin() - Cria uma nova janela.
+    subwin() - Cria uma sub-janela de uma janela existente.
+    keypad() - Habilita a leitura de teclas especiais (como as setas) pelo getch().
+    getmaxyx() - Obtém as dimensões máximas de uma janela.
+    halfdelay() - Configura o getch() para esperar por um determinado número de décimos de segundo por entrada do usuário.
+    timeout() - Configura o getch() para esperar por um determinado número de milissegundos por entrada do usuário.
+    scrollok() - Permite que a janela role automaticamente quando o final for atingido.
+    scroll() - Desloca o conteúdo da janela para cima ou para baixo.
+    getbegx() - Obtém a posição x inicial de uma janela.
+    getbegy() - Obtém a posição y inicial de uma janela.
+    getmaxx() - Obtém a posição x final de uma janela.
+    getmaxy() - Obtém a posição y final de uma janela.
+    wborder() - desenha uma borda em torno da janela especificada.
+    wrefresh() - atualiza a exibição da janela especificada na tela.
+    wgetch() - aguarda a entrada do usuário na janela especificada e retorna o caractere correspondente.
+    getmaxx() - retorna a largura máxima disponível na tela.
+    getmaxy() - retorna a altura máxima disponível na tela.
+    wclear() - limpa a janela especificada.
+    wprintw() - imprime uma string formatada na janela especificada.
+    wmove() - move o cursor da janela especificada para a posição especificada.
+    waddch() - adiciona um caractere à janela especificada.
+    waddstr() - adiciona uma string à janela especificada.
+    mvwin() - move uma janela para uma nova posição na tela.

@@ -1,0 +1,33 @@
+infofiglet.txt
+#include <figlet.h>
+
+    figlet_print: Imprime um texto com a fonte Figlet selecionada.
+    figlet_set_font: Define a fonte Figlet a ser usada.
+    figlet_get_font_list: Obtém uma lista de todas as fontes disponíveis.
+    figlet_set_width: Define a largura da impressão para o texto Figlet.
+    figlet_set_justify: Define o alinhamento do texto Figlet (esquerda, direita ou centralizado).
+    figlet_set_smush: Define o modo de ajuste de caracteres quando dois caracteres se sobrepõem.
+    figlet_set_direction: Define a direção do texto Figlet (esquerda para direita ou direita para esquerda).
+    figlet_get_char: Obtém a representação em ASCII art de um caractere específico na fonte atual.
+    figlet_load_font: Carrega uma fonte Figlet de um arquivo.
+    figlet_free_font: Libera a memória alocada para uma fonte Figlet carregada.
+    figlet_smushmode - define o modo de smush a ser usado para unir as letras
+    figlet_full_layout - desenha o layout completo, incluindo o cabeçalho e o rodapé
+    figlet_same_line - define se as letras devem ser desenhadas na mesma linha
+    figlet_adjust_cjk - ajusta o espaçamento entre caracteres para caracteres CJK (chinês, japonês e coreano)
+    figlet_left_right - define se as letras devem ser alinhadas à esquerda ou à direita
+    figlet_remove_hints - remove os pontos que indicam a posição original dos caracteres
+    figlet_kerning - define o espaçamento entre as letras
+    figlet_print_justify - justifica o texto impresso
+    figlet_vertical_layout - desenha o layout vertical
+    figlet_unicode_parsing - permite o uso de caracteres Unicode
+    figlet_character_set - define o conjunto de caracteres a ser usado
+    figlet_fitting - define como as letras são ajustadas para se encaixarem em um espaço limitado
+    figlet_font_file - carrega um arquivo de fonte personalizado
+    figlet_set_output_width - define a largura da saída
+    figlet_right_to_left - define se o texto deve ser impresso da direita para a esquerda
+    figlet_smush_character - define o caractere usado para smush as letras
+    figlet_skip_character - define o caractere a ser usado para pular espaços em branco
+    figlet_print_literal - imprime texto literal sem interpretá-lo como caracteres de fonte
+    figlet_read_width_file - lê um arquivo contendo informações de largura personalizadas para caracteres individuais
+    figlet_output_width - define a largura da saída
