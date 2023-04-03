@@ -18,4 +18,7 @@ Reduzida a miséria, Arkadia precisa de um herói... Você será este herói? Ou
 A ideia é criar uma plataforma onde o jogador vai interagindo com a história conforme suas escolhas,
 enquanto o jogo guia e oferece novos desafios. Armazenando o progresso do jogador em um arquivo a parte (.JSON)
 para que o progresso do jogador não seja perdido!
-Como estou começando, a ideia é ser um jogo com poucas opções, pelo menos 3 opç
+Como estou começando, a ideia é ser um jogo com poucas opções, pelo menos 3 opções por desafio.
+
+# Os jogadores poderão navegar entre as escolhas, como no menu inicial:
+![menufuncionando](https://user-images.githubusercontent.com/115588683/229429915-16dd79a1-43ec-4ba4-bf59-4f18e772e821.gif)
