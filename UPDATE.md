@@ -1,6 +1,7 @@
 #Atualizações do Projeto:
 
 #0.1
+
 Após as mudanças no projeto, comecei a testar possibilidades para a impressão das mensagens na tela.
 Depois de muito pensar, resolvi criar de uma forma mais "fácil", talvez não tão prática, mas que facilitará o processo de criação.
 O resultado foi bem satisfatório, abaixo um exemplo de como está começando a tomar forma o projeto:
