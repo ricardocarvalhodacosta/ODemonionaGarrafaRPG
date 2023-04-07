@@ -19,15 +19,6 @@ void menu () {
     int escolha = 0;
     int c;
 
-    initscr();
-    clear();
-    noecho();
-    cbreak();
-    curs_set(0);
-    start_color();
-    init_pair(1, COLOR_RED, COLOR_WHITE);
-    init_pair(2, COLOR_WHITE, COLOR_RED);
-
     janela = newwin(10, 40, 5, 10);
     keypad(janela, TRUE);
 
@@ -76,7 +67,6 @@ void menu () {
     case 2:
         // Opção 2 - Novo Jogo
         prologo();
-        clear();
         break;
 
     case 3:
@@ -86,6 +76,7 @@ void menu () {
     default:
         break;
     }
+    delwin(janela);
     getch();
     endwin();
 }
