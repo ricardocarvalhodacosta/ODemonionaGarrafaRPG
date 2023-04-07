@@ -4,67 +4,30 @@
 #include "header.h"
 
 void prologo () {
-    char *prologo = "historia/prologo.txt"; // nome do arquivo
-    FILE *fp;
-    char ch;
-    int lines = 0, chars = 0;
 
-    // Abre o arquivo
-    fp = fopen(prologo, "r");
-    if (fp == NULL) {
-        printf("Erro ao abrir o arquivo.\n");
-        return;
-    }
+    WINDOW *prologo;
+    clear();
+    prologo=newwin(30, 100, 5, 10);
+    box(prologo, 0, 0);
+    keypad(prologo, TRUE);
+    mvwprintw(prologo, 1, 2, "Bem-vindo a Arkadia, um vilarejo repleto de harmonia e felicidades...");
+    mvwprintw(prologo, 2, 2, "Pelo menos é o que diziam antigamente. Hoje, Arkadia é a entrada para um verdadeiro");
+    mvwprintw(prologo, 3, 2, "inferno no reino de Melkior. Tudo isso, graças ao infortunio que se abateu para");
+    mvwprintw(prologo, 4, 2, "um grupo de aventureiros que buscavam fortuna.");
+    mvwprintw(prologo, 5, 2, "Baltazar, o demônio da perdição encontrava-se aprisionado em uma masmorra a"); 
+    mvwprintw(prologo, 6, 2, "muito esquecida. Antigo antro de cantigos profanos de cultistas malignos, a masmorra");
+    mvwprintw(prologo, 7, 2, "permaneceu intocada durante séculos. Hoje, novamente ativa, o lugar tornou-se um verdadeiro ");
+    mvwprintw(prologo, 8, 2, "inferno dentro do reino de Melkior.");
+    mvwprintw(prologo, 9, 2, "Agora, você será um verdadeiro herói?");
+    mvwprintw(prologo, 10, 2, "Ou será só mais um covarde?");
+    mvwprintw(prologo, 11, 2, "Irá derrotar Baltazar e libertar Arkadia de seu destino cruel?");
+    mvwprintw(prologo, 13, 2, "Bom, vamos descobrir...");
+    wrefresh(prologo);
+    wgetch(prologo);
+    delwin(prologo);
+}
 
-    // Lê o número de linhas e caracteres no arquivo
-    while ((ch = fgetc(fp)) != EOF) {
-        if (ch == '\n') {
-            lines++;
-        }
-        chars++;
-    }
+void a1() {
 
-    // Fecha o arquivo
-    fclose(fp);
-
-    // Inicializa a biblioteca ncurses
-    initscr();
-    noecho();
-    curs_set(FALSE);
-
-    // Cria a janela
-    WINDOW *win = newwin(lines + 2, chars + 2, 0, 0);
-    // box(win, 0, 0); // adiciona uma borda à janela
-
-    // Abre o arquivo novamente e imprime o conteúdo na janela
-    fp = fopen(prologo, "r");
-    if (fp == NULL) {
-        printf("Erro ao abrir o arquivo.\n");
-        return;
-    }
-
-    int x = 1, y = 1;
-    while ((ch = fgetc(fp)) != EOF) {
-        if (ch == '\n') {
-            y++;
-            x = 1;
-        } else {
-            mvwaddch(win, y, x, ch);
-            x++;
-        }
-    }
-
-    // Fecha o arquivo
-    fclose(fp);
-
-    // Atualiza a janela
-    wrefresh(win);
-
-    // Aguarda a tecla ser pressionada
-    getch();
-
-    // Finaliza a biblioteca ncurses
-    endwin();
-
-    getch();
+    printf("oi");
 }
